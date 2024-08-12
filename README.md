@@ -9,7 +9,7 @@
 [Download](https://github.com/7urtle/Deadbydaylight-Farming-Bot/releases), run in admin mode and follow the instructions.   
 
 ## Notworking?  
-1.Check your game language.
+1.Check your game language.  
 2.Check your UI scale in Graphic settings, make sure it's 100%.  
 3.When using *Survivor-bot*，change keybinding "Forward","Turn right","Run" to mouse1(Left button).   
 
