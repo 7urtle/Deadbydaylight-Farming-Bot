@@ -164,7 +164,7 @@ if __name__ == "__main__":
                                           ██████╔╝   ██║          ██║  ╚██████╔╝██║  ██║   ██║   ███████╗███████╗
                                           ╚═════╝    ╚═╝          ╚═╝   ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝"""))
     print('Github Page:',aqua_text('https://github.com/7urtle/Deadbydaylight-Farming-Bot\n\n'))
-    print("1.Bloodweb Autoclick\n2.Killer Farmbot\n3.Survivot Farmbot")  
+    print("1.Bloodweb Autoclick\n2.Killer Farmbot\n3.Survivor Farmbot")  
     while(a == 0):
         Sel = input(green_text("Choose a number:\n"))
         if(Sel == '1'):
