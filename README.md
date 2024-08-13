@@ -13,4 +13,6 @@
 2.Check your UI scale in Graphic settings, make sure it's 100%.  
 3.When using *Survivor-bot*，change keybinding "Forward","Turn right","Run" to mouse1(Left button).   
 
-Tags:DBD Farm Bot,DBD AutoBot,DBD AFK Bot,DBD script,DBD Auto Bot,Farming bot,Bloodpoints,Bloodweb.
+Tags:
+DBD Farm Bot,DBD AutoBot,DBD AFK Bot,DBD script,DBD Auto Bot,Farming bot,Bloodpoints,Bloodweb.
+Deadbydaylight Farm Bot,Deadbydaylight AutoBot,Deadbydaylight AFK Bot,Deadbydaylight script,Deadbydaylight Auto Bot,Deadbydaylight Farming bot,Bloodpoints,Bloodweb.
