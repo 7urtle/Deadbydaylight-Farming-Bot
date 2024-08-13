@@ -1,4 +1,5 @@
-**DBD bot that auto farms bloodpoints / shards.**  
+**DBD bot that auto farms bloodpoints / shards.**    
+(中文)[https://github.com/7urtle/Deadbydaylight-Farming-Bot/blob/main/README-zh.md]
 
 ## Function
 - **Bloodweb Bot** &#x2714;
