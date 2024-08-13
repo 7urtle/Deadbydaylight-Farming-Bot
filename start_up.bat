@@ -1,2 +1,2 @@
-python %~dp0Deadbydaylight-bots.py
+python %~dp0DBD-bots.py
 pause

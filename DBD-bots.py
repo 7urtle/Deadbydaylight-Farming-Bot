@@ -3,9 +3,19 @@ import time
 import ctypes
 import sys
 import os
-#1920*1080 - res:
-#1732 1008 - Continue 
-#1743 923  - Ready
+
+#macros-----USER CHANGE VALUES HERE-------------
+button_loc = {
+    "Continue" : (1732,1008),
+    "Ready" : (1743,923),
+    "Bloodweb" : (680,560)
+}
+#--------DONT CHANGE ANYTHING BELOW-------------
+#-----Unless you know what you are doing--------
+
+cx,cy = button_loc["Continue"]
+rx,ry = button_loc["Ready"]
+bx,by = button_loc["Bloodweb"]
 
 def is_admin():
     try:
@@ -37,9 +47,9 @@ def surv_bot(dbdwindow):
 
     while(1):
         time.sleep(5)
-        pyautogui.click(x=1743,y=923)
+        pyautogui.click(x=cx,y=cy)
         time.sleep(1)
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=rx,y=ry)
         time.sleep(5)
         pyautogui.mouseDown()
         time.sleep(20)
@@ -61,9 +71,9 @@ def bloodweb_bot(dbdwindow):
     
     while(1):
         time.sleep(3)
-        pyautogui.mouseDown(x=680,y=560)
+        pyautogui.mouseDown(x=bx,y=by)
         time.sleep(1)
-        pyautogui.mouseUp(x=680,y=560)
+        pyautogui.mouseUp(x=bx,y=by)
     return 0 
 
 def killer_bot(dbdwindow):
@@ -80,9 +90,9 @@ def killer_bot(dbdwindow):
 
     while(1):
         time.sleep(5)
-        pyautogui.click(x=1743,y=923)
+        pyautogui.click(x=rx,y=ry)
         time.sleep(1)
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         time.sleep(3)
         #---Loop1
         pyautogui.mouseDown(button='right')
@@ -91,12 +101,12 @@ def killer_bot(dbdwindow):
         pyautogui.keyDown('w')
         time.sleep(0.3)
         pyautogui.keyUp('w')
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         time.sleep(1.7)
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         pyautogui.keyDown('q')
         time.sleep(1.7)
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         pyautogui.keyUp('q')
         time.sleep(1.7)
         #---Loop2
@@ -106,12 +116,12 @@ def killer_bot(dbdwindow):
         pyautogui.keyDown('w')
         time.sleep(0.3)
         pyautogui.keyUp('w')
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         time.sleep(1.7)
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         pyautogui.keyDown('q')
         time.sleep(1.7)
-        pyautogui.click(x=1732,y=1008)
+        pyautogui.click(x=cx,y=cy)
         pyautogui.keyUp('q')
         time.sleep(1.7)
         #--Ctrl Power
@@ -124,7 +134,7 @@ if __name__ == "__main__":
     os.system('cls')
     #check admin
     if(not is_admin()): 
-        print(red_text("Run start_up.bat as admin"))
+        print(red_text("Run as admin,Try again"))
         print("Press Enter to close...")
         input()
         sys.exit()
