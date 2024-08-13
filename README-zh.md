@@ -1,8 +1,8 @@
 # **黎明杀机 挂机脚本**  
 
--killer-bot 屠夫挂机 &#x2714;  
--suvivor-bot 人类挂机 &#x2714;  
--bloodwebbot 自动血网 &#x2714;  
+- killer-bot 屠夫挂机 &#x2714;  
+- suvivor-bot 人类挂机 &#x2714;  
+- bloodwebbot 自动血网 &#x2714;  
 
 ## 如何使用
 在 [下载页面](https://github.com/7urtle/Deadbydaylight-Farming-Bot/releases) 下载exe文件，使用管理员模式打开即可，你也可以自己装python运行源脚本文件。  
