@@ -12,7 +12,7 @@
 1.Get the location of "*Ready*","*Continue*","*Bloodweb*" and change them in python script. Notice that your "*Ready*" location should not include "*cancel*" location.  
 2.Install python and requirments, run *start_up.bat*.  
 If you don't know how to get button location, [Snipaste](https://www.snipaste.com/) is recommended.  
-![image](https://github.com/7urtle/Deadbydaylight-Farming-Bot/blob/main/IMG_20240813_094458.jpg)
+![image](https://github.com/7urtle/Deadbydaylight-Farming-Bot/blob/main/Snipaste_showcase.png)
 
 
 **Tags:**
