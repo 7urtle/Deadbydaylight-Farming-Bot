@@ -48,7 +48,7 @@ def surv_bot(dbdwindow):
     while(1):
         time.sleep(5)
         pyautogui.click(x=cx,y=cy)
-        time.sleep(1)
+        time.sleep(1.3)
         pyautogui.click(x=rx,y=ry)
         time.sleep(5)
         pyautogui.mouseDown()
@@ -91,12 +91,12 @@ def killer_bot(dbdwindow):
     while(1):
         time.sleep(5)
         pyautogui.click(x=rx,y=ry)
-        time.sleep(1)
+        time.sleep(1.4)
         pyautogui.click(x=cx,y=cy)
         time.sleep(3)
         #---Loop1
         pyautogui.mouseDown(button='right')
-        time.sleep(3.6)
+        time.sleep(3.4)
         pyautogui.mouseUp(button='right')
         pyautogui.keyDown('w')
         time.sleep(0.3)
@@ -111,7 +111,7 @@ def killer_bot(dbdwindow):
         time.sleep(1.7)
         #---Loop2
         pyautogui.mouseDown(button='right')
-        time.sleep(3.6)
+        time.sleep(3.4)
         pyautogui.mouseUp(button='right')
         pyautogui.keyDown('w')
         time.sleep(0.3)
