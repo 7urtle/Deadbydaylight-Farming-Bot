@@ -9,8 +9,8 @@
 [Download](https://github.com/7urtle/Deadbydaylight-Farming-Bot/releases), run in admin mode and follow the instructions.   
 
 ## For other languages / UIscales
-Get the location of "*Ready*","*Continue*","*Bloodweb*" and change them in python script. Notice that your "*Ready*" location should not include "*cancel*" location.
-Install python and requirments, run *start_up.bat*.
+1.Get the location of "*Ready*","*Continue*","*Bloodweb*" and change them in python script. Notice that your "*Ready*" location should not include "*cancel*" location.  
+2.Install python and requirments, run *start_up.bat*.
 
 **Tags:**
 DBD Farm Bot,DBD AutoBot,DBD AFK Bot,DBD script,DBD Auto Bot,Farming bot,Bloodpoints,Bloodweb.
