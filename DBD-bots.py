@@ -8,7 +8,11 @@ import os
 button_loc = {
     "Continue" : (1732,1008),
     "Ready" : (1743,923),
-    "Bloodweb" : (680,560)
+    "Bloodweb" : (680,560),
+    "OK" : (1410,665),
+    "Menu-start" : (306,110),
+    "Menu-killer":(307,216),
+    "Menu-surv"  :(313,313)
 }
 #--------DONT CHANGE ANYTHING BELOW-------------
 #-----Unless you know what you are doing--------
@@ -16,6 +20,11 @@ button_loc = {
 cx,cy = button_loc["Continue"]
 rx,ry = button_loc["Ready"]
 bx,by = button_loc["Bloodweb"]
+ox,oy = button_loc["OK"]
+sx,sy = button_loc["Menu-start"]
+kx,ky = button_loc["Menu-killer"]
+ux,uy = button_loc["Menu-surv"]
+
 
 def is_admin():
     try:
@@ -35,7 +44,7 @@ def red_text(text):
 #survbot section-------------------------------------------------
 def surv_bot(dbdwindow):
     print("---DBD SURVIVOR FARM BOT---\n-------Made By 7urtle-------\n----------------------------\n")
-    print("Make sure: \n1.Game is in English")
+    print("Make sure: ")
     print("2.UI_Scale in Graphic Settings is 100%")
     print("3.Set keybinding \"Running\" \"Turn left\" \"Forward\" to left mouse")
     print("4.Game is Windowed Fullscreen in 1920*1080 res\n")
@@ -46,9 +55,20 @@ def surv_bot(dbdwindow):
     dbdwindow.activate()
 
     while(1):
+        pyautogui.moveTo(x=sx,y=sy,duration=0.5)
+        time.sleep(1)
+        pyautogui.click()
+        time.sleep(1)
+        pyautogui.moveTo(x=ux,y=uy,duration=0.5)
+        time.sleep(1)
+        pyautogui.click()
+        time.sleep(3)
+
         time.sleep(5)
         pyautogui.click(x=cx,y=cy)
-        time.sleep(1.3)
+        time.sleep(1)
+        pyautogui.click(x=ox,y=oy)
+        time.sleep(1)
         pyautogui.click(x=rx,y=ry)
         time.sleep(5)
         pyautogui.mouseDown()
@@ -59,10 +79,10 @@ def surv_bot(dbdwindow):
 #bloodwebbot section-------------------------------------------------
 def bloodweb_bot(dbdwindow):
     print("---DBD BLOODWEB BOT---\n-------Made By 7urtle-------\n----------------------------\n")
-    print("Make sure: \n1.Game is in English")
-    print("2.UI_Scale in Graphic Settings is 100%")
-    print("3.Bloodweb is open")
-    print("4.Game is Windowed Fullscreen in 1920*1080 res\n")
+    print("Make sure: ")
+    print("1.UI_Scale in Graphic Settings is 100%")
+    print("2.Bloodweb is open")
+    print("3.Game is Windowed Fullscreen in 1920*1080 res\n")
     time.sleep(1)
     input("Press ENTER to start") 
     print(green_text("Bloodweb_bot is Running......\nCtrl+C to stop"))
@@ -78,10 +98,9 @@ def bloodweb_bot(dbdwindow):
 
 def killer_bot(dbdwindow):
     print("---DBD Killer Farming BOT---\n-------Made By 7urtle-------\n----------------------------\n")
-    print("Make sure: \n1.Game is in English")
-    print("2.UI_Scale in Graphic Settings is 100%")
-    print("3.Bloodweb is open")
-    print("4.Game is Windowed Fullscreen in 1920*1080 res\n")
+    print("Make sure: ")
+    print("1.UI_Scale in Graphic Settings is 100%")
+    print("3.Game is Windowed Fullscreen in 1920*1080 res\n")
     time.sleep(1)
     input("Press ENTER to start") 
     print(green_text("Killerbot is Running......\nCtrl+C to stop"))
@@ -89,10 +108,21 @@ def killer_bot(dbdwindow):
     dbdwindow.activate()
 
     while(1):
-        time.sleep(5)
+        time.sleep(2)
         pyautogui.click(x=rx,y=ry)
-        time.sleep(1.4)
+        time.sleep(1)
+        pyautogui.click(x=ox,y=oy)
+        time.sleep(1)
         pyautogui.click(x=cx,y=cy)
+        time.sleep(1)
+        
+        pyautogui.moveTo(x=sx,y=sy,duration=0.5)
+        time.sleep(1)
+        pyautogui.click()
+        time.sleep(1)
+        pyautogui.moveTo(x=kx,y=ky,duration=0.5)
+        time.sleep(1)
+        pyautogui.click()
         time.sleep(3)
         #---Loop1
         pyautogui.mouseDown(button='right')
@@ -101,7 +131,7 @@ def killer_bot(dbdwindow):
         pyautogui.keyDown('w')
         time.sleep(0.3)
         pyautogui.keyUp('w')
-        pyautogui.click(x=cx,y=cy)
+        pyautogui.click(x=rx,y=ry)
         time.sleep(1.7)
         pyautogui.click(x=cx,y=cy)
         pyautogui.keyDown('q')
@@ -123,11 +153,12 @@ def killer_bot(dbdwindow):
         time.sleep(1.7)
         pyautogui.click(x=cx,y=cy)
         pyautogui.keyUp('q')
-        time.sleep(1.7)
+        time.sleep(3)
         #--Ctrl Power
         pyautogui.keyDown('ctrl')
         time.sleep(3)
         pyautogui.keyUp('ctrl')
+        time.sleep(1)
     return 0
 
 if __name__ == "__main__":
