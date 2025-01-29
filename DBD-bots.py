@@ -7,7 +7,7 @@ import os
 #macros-----USER CHANGE VALUES HERE-------------
 button_loc = {
     "Continue" : (1732,1008),
-    "Ready" : (1743,923),
+    "Ready" : (1618,968),
     "Bloodweb" : (680,560),
     "OK" : (1410,665),
     "Menu-start" : (306,110),
@@ -56,21 +56,23 @@ def surv_bot(dbdwindow):
 
     while(1):
         pyautogui.moveTo(x=sx,y=sy,duration=0.5)
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.click()
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.moveTo(x=ux,y=uy,duration=0.5)
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.click()
-        time.sleep(3)
 
-        time.sleep(5)
-        pyautogui.click(x=cx,y=cy)
-        time.sleep(1)
-        pyautogui.click(x=ox,y=oy)
-        time.sleep(1)
-        pyautogui.click(x=rx,y=ry)
-        time.sleep(5)
+        time.sleep(2)
+        pyautogui.moveTo(x=cx,y=cy,duration=0.5)
+        pyautogui.click()
+        time.sleep(0.5)
+        pyautogui.moveTo(x=ox,y=oy,duration=0.5)
+        pyautogui.click()
+        time.sleep(0.5)
+        pyautogui.moveTo(x=rx,y=ry,duration=0.5)
+        pyautogui.click()
+        time.sleep(0.5)
         pyautogui.mouseDown()
         time.sleep(20)
         pyautogui.mouseUp()
@@ -109,22 +111,25 @@ def killer_bot(dbdwindow):
 
     while(1):
         time.sleep(2)
-        pyautogui.click(x=rx,y=ry)
-        time.sleep(1)
-        pyautogui.click(x=ox,y=oy)
-        time.sleep(1)
-        pyautogui.click(x=cx,y=cy)
-        time.sleep(1)
+        pyautogui.moveTo(x=cx,y=cy,duration=0.5)
+        pyautogui.click()
+        time.sleep(0.5)
+        pyautogui.moveTo(x=ox,y=oy,duration=0.5)
+        pyautogui.click()
+        time.sleep(0.5)
+        pyautogui.moveTo(x=rx,y=ry,duration=0.5)
+        pyautogui.click()
+        time.sleep(0.5)
         
         pyautogui.moveTo(x=sx,y=sy,duration=0.5)
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.click()
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.moveTo(x=kx,y=ky,duration=0.5)
-        time.sleep(1)
+        time.sleep(0.5)
         pyautogui.click()
-        time.sleep(3)
         #---Loop1
+        time.sleep(2)
         pyautogui.mouseDown(button='right')
         time.sleep(3.4)
         pyautogui.mouseUp(button='right')
